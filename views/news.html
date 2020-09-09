@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%include('./public/header.html')%>
+    <h2>绑定数据</h2>
+    <br>
+    <%=list.name%>
+    <br>
+    <%=1 + 2%>
+    <br>
+    <%-list.h%>
+    <br>
+    <h2>条件</h2>
+    <%if(list.num>10){%>
+        大于10
+    <%}else{%>
+        小于10
+    <%}%>
+    <br>
+    <h2>循环</h2>
+    <ul>
+        <%for(var i = 0; i < list.data.length;i++){%>
+        </li>
+            <%=list.data[i]%>
+        <li>
+            <%}%>
+    </ul>
+    <br>
+</body>
+</html>
